@@ -74,6 +74,22 @@ git commit -m "FT-001: add auth middleware"       # Feature-level
 git commit -m "FT-001.2: fix login validation"    # Subtask-level
 ```
 
+## Versioning
+
+Each skill has its own `VERSION` file. Check what you have installed:
+
+```bash
+./install.sh -v
+```
+
+```
+  SKILL                INSTALLED    AVAILABLE    STATUS
+  -----                ---------    ---------    ------
+  feature-plan         0.1.0        0.2.0        update available
+```
+
+To upgrade, `git pull` and re-run `./install.sh`.
+
 ## Uninstall
 
 ```bash
