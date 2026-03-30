@@ -1,0 +1,24 @@
+# Feature tracking configuration
+# -----------------------------------------------
+# Place this file as .featurerc.yml in your project root.
+
+# Project identifier — used as prefix: FT-001, FT-002
+# Keep it short (2-4 chars), uppercase
+# Examples: FT, AUTH, PAY, DASH
+prefix: FT
+
+# GitHub repositories linked to this project
+# Issues are created in each repo when a new feature is planned
+# Format: owner/repo-name
+repos:
+  - acme/backend
+  - acme/frontend
+
+# Default labels applied to created GitHub issues
+# Remove or leave empty for no labels
+labels:
+  - feature
+
+# Feature docs location (relative to project root)
+# This directory is created automatically if it doesn't exist
+docs_dir: docs/features
